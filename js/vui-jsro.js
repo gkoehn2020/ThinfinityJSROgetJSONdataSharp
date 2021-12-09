@@ -7,8 +7,8 @@ helper.dom.ready(function () {
 		ro = jsro.model.ro;
 	});
 
-	// Handles ro.Events['getJSON'] 
-	jsro.on('ro', 'getJSON', function () {
+	// Handles ro.Events['getStringFromBrowser'] 
+	jsro.on('ro', 'getStringFromBrowser', function () {
 		ro.stringdata = 'hello world';
 	});
 

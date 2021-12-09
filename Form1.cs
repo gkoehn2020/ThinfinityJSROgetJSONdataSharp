@@ -30,7 +30,7 @@ namespace WinFormsApp1
             }
 
             ro = new JSObject("ro");
-            ro.Events.Add("getJSON");
+            ro.Events.Add("getStringFromBrowser");
             aProp = ro.Properties.Add("stringdata");
             aProp.AsString = "";
             aProp.OnSet(new JSBinding(
@@ -48,7 +48,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ro.Events["getJSON"].Fire();
+            ro.Events["getStringFromBrowser"].Fire();
         }
     }
 }
