@@ -11,3 +11,9 @@ https://www.cybelesoft.com/blog/windows-and-web-integration-through-thinfinity-j
 I am using Thinfinity VirtualUI version 3.0.7.103.
 Visual Studio 2022 Community Edition.
 Windows 10.
+
+My requirement is to have JSRO work and have the Javascript served by the Application.
+It needs to work by using...
+            vui.HTMLDoc.CreateSessionURL
+            vui.HTMLDoc.LoadScript
+
