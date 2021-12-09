@@ -1810,7 +1810,7 @@ namespace Cybele.Thinfinity
         {
             if (m_OnBrowserResize != null)
             {
-                BrowserResizeEventArgs args = new BrowserResizeEventArgs();
+                BrowserResizeEventArgs args = new();
                 args.Width = Width;
                 args.Height = Height;
                 args.ResizeMaximized = ResizeMaximized;
@@ -1825,7 +1825,7 @@ namespace Cybele.Thinfinity
         {
             if (m_OnGetUploadDir != null)
             {
-                GetUploadDirEventArgs args = new GetUploadDirEventArgs();
+                GetUploadDirEventArgs args = new();
                 args.Directory = Directory;
                 args.Handled = Handled;
                 m_OnGetUploadDir(this, args);
@@ -1838,7 +1838,7 @@ namespace Cybele.Thinfinity
         {
             if (m_OnClose != null)
             {
-                CloseArgs args = new CloseArgs();
+                CloseArgs args = new();
                 m_OnClose(this, args);
             }
         }
@@ -1847,7 +1847,7 @@ namespace Cybele.Thinfinity
         {
             if (m_OnReceiveMessage != null)
             {
-                ReceiveMessageArgs args = new ReceiveMessageArgs();
+                ReceiveMessageArgs args = new();
                 args.Data = Data;
                 m_OnReceiveMessage(this, args);
             }
@@ -1857,7 +1857,7 @@ namespace Cybele.Thinfinity
         {
             if (m_OnDownloadEnd != null)
             {
-                DownloadEndArgs args = new DownloadEndArgs();
+                DownloadEndArgs args = new();
                 args.Filename = Filename;
                 m_OnDownloadEnd(this, args);
             }
@@ -1865,7 +1865,7 @@ namespace Cybele.Thinfinity
 
         internal void OnUploadEndEventHandler(string Filename) {
             if (m_OnUploadEnd != null) {
-                UploadEndArgs args = new UploadEndArgs();
+                UploadEndArgs args = new();
                 args.Filename = Filename;
                 m_OnUploadEnd(this, args);
             }
@@ -1874,7 +1874,7 @@ namespace Cybele.Thinfinity
         internal void OnRecorderChangedEventHandler() {
             if (m_OnRecorderChanged != null)
             {
-                RecorderChangedArgs args = new RecorderChangedArgs();
+                RecorderChangedArgs args = new();
                 m_OnRecorderChanged(this, args);
             }
         }
@@ -2106,7 +2106,7 @@ namespace Cybele.Thinfinity
         {
             if (OnExecuteMethod != null)
             {
-                JSExecuteMethodEventArgs args = new JSExecuteMethodEventArgs();
+                JSExecuteMethodEventArgs args = new();
                 args.Sender = Sender;
                 args.Method = Method;
                 OnExecuteMethod(this, args);
@@ -2117,7 +2117,7 @@ namespace Cybele.Thinfinity
         {
             if (OnPropertyChange != null)
             {
-                JSPropertyChangeEventArgs args = new JSPropertyChangeEventArgs();
+                JSPropertyChangeEventArgs args = new();
                 args.Sender = Sender;
                 args.Prop = Prop;
                 OnPropertyChange(this, args);
