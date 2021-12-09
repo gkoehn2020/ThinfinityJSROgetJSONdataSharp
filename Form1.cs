@@ -22,7 +22,7 @@ namespace WinFormsApp1
             DirectoryInfo di = new(jsDir);
             while (di != null)
             {
-                jsDir = di.FullName + @"\x-tag\";
+                jsDir = di.FullName + @"\js\";
                 if (Directory.Exists(jsDir)) break;
                 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 di = di.Parent;
@@ -42,8 +42,8 @@ namespace WinFormsApp1
                   }));
             ro.ApplyModel();
 
-            vui.HTMLDoc.CreateSessionURL("/x-tag/", jsDir);
-            vui.HTMLDoc.LoadScript(@"/x-tag/vui-jsro/vui-jsro.js");
+            vui.HTMLDoc.CreateSessionURL("/js/", jsDir);
+            vui.HTMLDoc.LoadScript(@"/js/vui-jsro.js");
         }
 
         private void button1_Click(object sender, EventArgs e)
