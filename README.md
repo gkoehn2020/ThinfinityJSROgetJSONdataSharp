@@ -17,4 +17,4 @@ Windows 10.<br>
   The reason is, if we must change the JSRO javascript code for a new version of our Application,<br>
   we cannot be frequently changing the app.html file in C:\Program Files\Thinfinity\VirtualUI\web.<br>
   Our IT requires new versions of applications to be drop in replacements of our binaries.<br>
-  It's best if we do not modify code outside of our application directories.<br>
+  We do not want modify code outside of our application directories.<br>
