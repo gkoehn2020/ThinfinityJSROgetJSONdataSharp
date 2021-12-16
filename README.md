@@ -6,9 +6,9 @@ https://github.com/gkoehn2020/ThinfinityJSROgetJSONdata
 Learn how to use JSRO at...<br>
 https://www.cybelesoft.com/blog/windows-and-web-integration-through-thinfinity-jsro-javascript-remote-objects-introduction/
 
-<i>[2021-12-09] On my system, the property in the Windows Application is always empty! What is wrong?</i>
+<i>[2021-12-09] On Thinfinity VirtualUI version 3.0.7.103, the property in the Windows Application is always empty!</i><br>
+<i>[2021-12-15] Thinfinity VirtualUI version 3.0.7.108 fixed the issue.</i>
 
-I am using Thinfinity VirtualUI version 3.0.7.103.<br>
 Visual Studio 2022 Community Edition.<br>
 Windows 10.<br>
 
